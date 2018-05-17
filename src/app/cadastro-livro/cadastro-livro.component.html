@@ -6,15 +6,15 @@
 
     <label>Titulo</label>
     <input type="text" name="titulo" class="form-control" formControlName="titulo" />
-    <p *ngIf="formGroup.controls.titulo.dirty && formGroup.controls.titulo.erros">Valor Inválido</p>
+    <p *ngIf="formGroup.controls.titulo.dirty && formGroup.controls.titulo.errors">Valor Inválido</p>
 
     <label>Gênero</label>
     <input type="text" name="genero" class="form-control" formControlName="titulo" />
-    <p *ngIf="formGroup.controls.genero.dirty && formGroup.controls.genero.erros">Valor Inválido</p>
+    <p *ngIf="formGroup.controls.genero.dirty && formGroup.controls.genero.errors">Valor Inválido</p>
 
     <label>Autor</label>
     <input type="text" name="autor" class="form-control" formControlName="titulo" />
-    <p *ngIf="formGroup.controls.autor.dirty && formGroup.controls.autor.erros">Valor Inválido</p>
+    <p *ngIf="formGroup.controls.autor.dirty && formGroup.controls.autor.errors">Valor Inválido</p>
 
     <button style="margin-top: 25px;" type="submit" class="btn btn-outline-success form-control" [disabled]="formGroup.invalid">Cadastrar</button>
 

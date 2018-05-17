@@ -1,0 +1,26 @@
+<div class="container">
+
+  <h1>Cadastro de Carros</h1>
+
+  <form [formGroup]="formGroup" (ngSubmit)="cadastrar()" class="form-group">
+
+    <label>Modelo</label>
+    <input type="text" name="modelo" class="form-control" formControlName="modelo" />
+    <p *ngIf="formGroup.controls.modelo.dirty && formGroup.controls.modelo.errors">Valor Inválido</p>
+
+    <label>Marca</label>
+    <input type="text" name="marca" class="form-control" formControlName="marca" />
+    <p *ngIf="formGroup.controls.marca.dirty && formGroup.controls.marca.errors">Valor Inválido</p>
+
+    <label>Ano</label>
+    <input type="text" name="ano" class="form-control" formControlName="ano" />
+    <p *ngIf="formGroup.controls.ano.dirty && formGroup.controls.ano.errors">Valor Inválido</p>
+
+    <label>Preco</label>
+    <input type="text" name="preco" class="form-control" formControlName="preco" />
+    <p *ngIf="formGroup.controls.preco.dirty && formGroup.controls.preco.errors">Valor Inválido</p>
+
+    <button style="margin-top: 25px;" type="submit" class="btn btn-outline-success form-control" [disabled]="formGroup.invalid">Cadastrar</button>
+
+  </form>
+</div>

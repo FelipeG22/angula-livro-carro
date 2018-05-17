@@ -11,6 +11,8 @@ import { CarrosComponent } from './carros/carros.component';
 import { CarroService } from "./services/carro.service";
 import { CadastroLivroComponent } from './cadastro-livro/cadastro-livro.component';
 import { ReactiveFormsModule } from "@angular/forms";
+import { CadastroCarroComponent } from './cadastro-carro/cadastro-carro.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { ReactiveFormsModule } from "@angular/forms";
     AppComponent,
     LivrosComponent,
     CarrosComponent,
-    CadastroLivroComponent
+    CadastroLivroComponent,
+    CadastroCarroComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
